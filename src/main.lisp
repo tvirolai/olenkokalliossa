@@ -9,8 +9,7 @@
 (define-easy-handler (jou :uri "/jou") ()
   (json-response :status +http-ok+
                  :headers '(("X-HELLO" . "world"))
-                 :data "Jambalaya muthafuckaz"
-                 :error "Not applicable here, but for demonstration..."))
+                 :data "Jambalaya"))
 
 (defun get-env (name)
   (sb-unix::posix-getenv name))
